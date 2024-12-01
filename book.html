@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Забронировать - Восточный Ветер</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hystModal-0.4/dist/hystmodal.min.css">
+    <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="img/favicon.ico" rel="icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -24,22 +27,58 @@
         </div>
         </header>
     <main>
-        <h1>Забронировать столик</h1>
+        <h1 class="book_title">Забронировать столик</h1>
         <ul class="book_menu">
-            <li>Москва, ул. Тверская, 5 <button class="book_btn">Забронировать</button></li>
+            <li>Москва, ул. Тверская, 5 
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Забронировать</button></li>
             <div class="int_img">
                 <img src="img/inter1.jpg" alt="">
             </div>
-            <li>Санкт-Петербург, Невский пр., 15 <button class="book_btn">Забронировать</button></li>
+            <li>Санкт-Петербург, Невский пр., 15 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Забронировать</button></li>
             <div class="int_img">
                 <img src="img/inter2.jpg" alt="">
             </div>
         </ul>
+
     </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Бронирование столика</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Дата</label>
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Время</label>
+                <input type="time" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Номер телефона</label>
+                <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="+7 900-000-00-00">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Согласие на обработку персональных данных</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Подтвердить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
         <p>Контакты: +7 (900) 123-45-67 | info@vostok-veter.ru</p>
         <p>&copy; 2024 Восточный Ветер</p>
+        <div class="btn-up btn-up_hide"></div>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </body>
 </html>

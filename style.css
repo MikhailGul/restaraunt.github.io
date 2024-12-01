@@ -4,6 +4,7 @@ body {
     font-family: "Oswald", sans-serif !important;
     margin: 0;
     padding: 0;
+    background-color: black !important;
 }
 
 header {
@@ -46,11 +47,8 @@ nav ul li a {
 }
 
 main {
-    padding-top: 25px;
-    padding-left: 200px;
-    padding-right: 200px;
     background-color: black;
-    color: white;
+    justify-content: center;
 }
 
 footer {
@@ -58,20 +56,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
-
-.slider {
-    display: flex;
-    overflow-x: auto;
-}
-
-.slider-item {
-    margin-right: 10px;
-}
-
-.slider-item img {
-    max-width: 100%;
-    height: auto;
 }
 
 .dropdown-menu {
@@ -82,22 +66,10 @@ footer {
 .dropdown-menu li {
     margin: 10px 0;
 }
-.slider{
-    margin-top: 20px ;
-    display: flex;
-    gap: 30px;
-}
-.slider a{
-    font-size: 25px;
-}
 .text{
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
     text-decoration: none;
     color: white;
-}
-.carousel{
-    max-width: 768px;
-    max-height: 640px;
 }
 main{
     display: flex;
@@ -106,19 +78,21 @@ main{
 .location{
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    
+    margin:0 auto;
+}
+.location img{
+    max-width: 1400px;
 }
 .location a{
     font-size: 40px;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 .text_slider{
     font-family: "Montserrat", sans-serif !important;
-    max-width: 768px;
+    max-width: 700px;
     max-height: 640px;
-    font-size: 27px;
+    font-size: 2px;
     text-align: justify;
 }
 .text_slider a{
@@ -141,11 +115,13 @@ main{
     line-height: 40px;
     text-align: justify;
     max-width: 700px;
-    margin-top: 0px;
+    color: white;
 }
 .about_title{
     font-family: "Oswald", sans-serif !important;
     font-size: 45px;
+    text-decoration: none;
+    color: white;
 }
 .about_card, .about_card1, .about_card2, .about_card3, .about_card4, .about_card5{
     display: flex;
@@ -170,3 +146,262 @@ main{
 .int_img{
     margin-top: 20px;
 }
+.btn{
+    background-color: #DEDDD2 !important;
+    border-color: black !important;
+    color: black !important;
+}
+.card_text {
+    display: flex;
+    flex-direction: column;
+
+}
+.card_text a{
+    color: black;
+    text-decoration: none !important;
+}
+.card_mtext{
+    font-size: 30px;
+    color: black !important;
+}
+.card_stext{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 15px;
+    color: black !important;
+}
+.worker_card{
+    background-color: #DEDDD2 !important;
+    padding: 15px;
+    max-width: 350px;
+    border-radius: 7px;
+}
+.worker_img img{
+    max-width: 320px;
+}
+.worker_title{
+    font-size: 50px;
+    text-decoration: none !important;
+    color: white !important;
+}
+.workers{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap:3vw;
+    text-decoration: none !important;
+
+}
+.carousel {
+    width: auto !important;
+  }
+.carousel a{
+    font-size: 30px;
+}
+.carousel-inner img {
+    height: 1000px !important;
+    margin: 0 auto;
+  }
+.carousel-indicators li {
+    border-color: #000;
+  }
+.carousel-indicators .active {
+    background-color: #000;
+  }
+  .about{
+    margin: 0 auto;
+  }
+.book_menu{
+    margin: 0 auto;
+}
+.book_menu li{
+    list-style-type: none;
+    color: white;
+}
+.container_work{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.container_work p{
+    font-size: 50px;
+}
+.container_about{
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.container_about p{
+    font-size: 50px;
+    color: white;
+}
+.rest_about{
+    display: flex;
+    justify-content: center;
+}
+.rest_about p{
+font-size: 22px;
+max-width: 500px;
+margin-left: 20px;
+}
+.rest_img img{
+    max-width: 1000px;
+} 
+
+.btn1{
+    position: fixed !important;
+    bottom: 20px !important; /* Расстояние от нижнего края экрана */
+    right: 20px !important; /* Расстояние от правого края экрана */
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    z-index: 1;
+}
+.book_title{
+    color: white;
+}
+.index{
+    margin: 20px 10vw 20px 10vw;
+}
+.koguvcavis-varazdel {
+    padding: 38px 0;
+    background:black;
+    color: black;
+    text-align: center;
+  }
+  .koguvcavis-varazdel h1{
+    color: white;
+  }
+  .sestim-donials{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .sectionesag {
+    width: 195px;
+    height: 3px;
+    background: #DEDDD2;
+    margin: 23px auto;
+  }
+  
+  .sagestim-lonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vemotau-vokusipol{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial {
+    background: #DEDDD2;
+    padding: 28px;
+    border-radius: 10px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .gecedanam{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .apogered-gselected{
+    color: #ecda0d;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width:960px) {
+  .vemotau-vokusipol{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .vemotau-vokusipol{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+  .rest_menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 25px ;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 7px;
+    font-weight: 800;
+    background-color: #DEDDD2 ;
+  }
+  .menu-section{
+    color:black;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-section li{
+    list-style-type: none;
+  }
+  .menu-section p,h3{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 20px;
+  }
+  .menu-section img{
+    max-width: 800px;
+  }
+  .menu-section ul{
+    padding: 0;
+  }
+  .btn-up  {
+    /* фиксированное позиционирование */
+    position: fixed !important;
+    /* цвет фона */
+    background-color: #DEDDD2 !important;
+    /* расстояние от правого края окна браузера */
+    right: 250px !important;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0 !important;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px !important;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px !important;
+    /* вид курсора */
+    cursor: pointer !important;
+    /* отображение элемента как flex */
+    display: flex !important;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center !important;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center !important;
+    /* ширина элемента */
+    width: 60px !important;
+    /* высота элемента */
+    height: 50px !important;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px !important;
+    height: 40px !important;
+    background: transparent no-repeat center center !important;
+    background-size: 100% 100% !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E") !important;
+  }
+  
+  .btn-up_hide {
+    display: none !important;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #a7a69e !important; /* цвет заднего фона при наведении */
+    }
+  }
